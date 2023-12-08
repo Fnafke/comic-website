@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/normalize.css">
-    <link rel="stylesheet" href="Styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/normalize.css" />
+    <link rel="stylesheet" href="Styles/styles.css" />
     <title>Subvero</title>
+    <link rel="icon" href="./Images/favicon-placeholder.gif" type="image/gif" />
     <script type="text/javascript" src="Scripts/dom.js" defer></script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="Scripts/countdown_timer.js"
+      defer
+    ></script>
+  </head>
+  <body>
     <header>
-        <h1>SubVero</h1>
-        <nav class="topnav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Introduction</a></li>
-                <li class="dropdown">
-                    <button class="dropdownbutton">Story
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropcontent">
-                        <a href="">Main Story Chapters</a>
-                        <a href="">Draft Story Chapters</a>
-                    </div>
-                </li>
-                <li><a href="">Characters</a></li>
-            </ul>
-        </nav>
+      <div class="HeaderDiv">
+        <img
+          src="/comic-website/Images/background 1920 400 placeholder.png"
+          alt=""
+        />
+        <!-- Countdown timer element -->
+        <p id="countdown_timer"></p>
+      </div>
+      <nav class="topnav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li class="dropdown">
+            <button class="dropdownbutton">
+              Story
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropcontent">
+              <a href="">Main Story Chapters</a>
+              <a href="">Draft Story Chapters</a>
+            </div>
+          </li>
+          <li><a href="">Characters</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <article>
-            <section>
-                <h2>Introduction</h2>
-                <p></p>
-            </section>
-        </article>
+      <article>
+        <section class="home">
+          <section class="home main_story">
+            <p>Check out the story right here.</p>
+          </section>
+          <section class="home draft_story">
+            <p>
+              Interested in the original draft version of the story? You can
+              check it out right here!
+            </p>
+          </section>
+          <section class="home characters">
+            <p>
+              Do you want to check out the character designs and their
+              background? You can check it out right here!
+            </p>
+          </section>
+        </section>
+        <section id="introduction">
+          <h1>Introduction</h1>
+          <p>
+            In the midst of the mundane and the procrastination-laden days of my
+            final exams in 2022, I stumbled upon the inception of a story born
+            out of sheer boredom. It began as a whimsical distraction, but as
+            the exam chaos subsided, so did my initial efforts, leaving only the
+            fledgling first two parts in its wake.
+          </p>
+          <p>
+            Yet, as the calendar flipped to April 2023, the embers of creativity
+            reignited, breathing life into what I now consider the crux of the
+            narrative—Part 3. This digital rebirth not only marks the
+            continuation of Yuta Tokito's journey but also serves as a testament
+            to my evolving drawing skills and storytelling prowess, a
+            metamorphosis documented in the "Draft Story."
+          </p>
+          <p>
+            This digital adaptation is more than just pixels on a screen; it's
+            an invitation for everyone to partake in the evolving tapestry of
+            this tale. A fusion of influences from beloved animanga like Attack
+            on Titan, Bleach, Jujutsu Kaisen, Jojo's Bizarre Adventure, and
+            more, the story weaves these inspirations into a unique fabric that
+            I hope resonates with readers.
+          </p>
+          <p>
+            Centered around our protagonist, Yuta Tokito (formerly known as
+            "Kujo Jotaro" in the draft), the narrative embarks on a journey of
+            revenge and redemption. Yuta's quest to avenge his fallen family
+            members unfolds against the backdrop of a sinister corporation, the
+            nucleus of the antagonist's organization. Along the way, Yuta finds
+            companions whose camaraderie and support become pivotal in his
+            pursuit of justice.
+          </p>
+          <p>
+            As the story unfolds digitally, it invites you to join Yuta Tokito
+            on his odyssey—a tale born of procrastination, inspired by animanga,
+            and crafted with the hope that its essence resonates with the hearts
+            of those who embark on this adventure.
+          </p>
+        </section>
+      </article>
     </main>
     <footer>
-        <p>©Fnafke 2023</p>
+      <p>©Fnafke 2023</p>
     </footer>
-</body>
+  </body>
 </html>

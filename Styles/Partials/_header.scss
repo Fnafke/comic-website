@@ -1,5 +1,15 @@
 @use "./variables";
 
 header {
-    background-image: url(/Images/background\ 1920\ 400\ placeholder.png);
+    .HeaderDiv {
+        img {
+        display: block;
+        width: 100%;
+        }
+    }
+
+    #countdown_timer {
+        text-align: center;
+        font-size: 30px;
+    }
 }
