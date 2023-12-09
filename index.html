@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="Styles/styles.css" />
     <title>Subvero</title>
     <link rel="icon" href="./Images/favicon-placeholder.gif" type="image/gif" />
-    <script type="text/javascript" src="Scripts/dom.js" defer></script>
+    <script
+      type="text/javascript"
+      src="Scripts/hamburger_menu.js"
+      defer
+    ></script>
     <script
       type="text/javascript"
       src="Scripts/countdown_timer.js"
@@ -16,6 +20,9 @@
   </head>
   <body>
     <header>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
       <div class="HeaderDiv">
         <img
           src="/comic-website/Images/background 1920 400 placeholder.png"
@@ -24,6 +31,7 @@
         <!-- Countdown timer element -->
         <p id="countdown_timer"></p>
       </div>
+
       <nav class="topnav">
         <ul>
           <li><a href="">Home</a></li>

@@ -21,6 +21,15 @@ header #countdown_timer {
 
 .topnav {
   background-color: #D6EDFF;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  padding-top: 120px;
+  z-index: 98;
+  transition: 0.4s;
 }
 .topnav ul {
   margin: 0;
@@ -52,8 +61,8 @@ header #countdown_timer {
   outline: none;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
   transition: 0.2s ease-in-out;
 }
 .topnav ul .dropdown:hover .dropdownbutton {
@@ -83,4 +92,67 @@ header #countdown_timer {
 }
 .topnav ul .dropdown:hover .dropcontent {
   display: block;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.topnav.is-active {
+  right: 0;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 99;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+/*
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-color: blue;
+  padding-top:120px ;
+
+  a {
+    display: block;
+    margin: 0 auto 16px;
+    text-align: center;
+    width: fit-content;
+    padding: 12px 16px;
+    background-color: palegreen;
+  }
+
+}
+*//*# sourceMappingURL=styles.css.map */
