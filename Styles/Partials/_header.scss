@@ -10,6 +10,9 @@ header {
 
     #countdown_timer {
         text-align: center;
-        font-size: 30px;
+        font-size: 3rem;
+        color: variables.$color-blue;
+        font-family: variables.$text_font1;
+        font-weight: 900;
     }
 }

@@ -1,13 +1,33 @@
+@use "./variables";
+
 .home {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     box-sizing: border-box;
     margin: auto;
     align-items: center;
+    color: variables.$white;
+
 }
 
 
 
 #introduction {
-    width: 30%;
+    width: 60%;
+    color: variables.$white;
+    margin-left: 5rem;
+    h1 {
+        font-size: 100px;
+        color: variables.$color-blue;
+        font-family: variables.$text_font2;
+    }
+
+    p {
+        display: block;
+        margin-top: 4rem;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 200;
+        font-family: variables.$text_font1;
+    }
 }

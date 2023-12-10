@@ -8,7 +8,7 @@ window.onload = () => {
     })
 
     const introductionLink = document.querySelector('a[href="#introduction"]');
-    introductionLink.addEventListener("click", function () {
+    introductionLink.addEventListener("click", () => {
       // Close the menu
       topnav.classList.remove("is-active");
     });
