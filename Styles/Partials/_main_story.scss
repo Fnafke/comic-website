@@ -1,0 +1,15 @@
+@use "./variables";
+
+.no_story_chapters {
+    color: variables.$white;
+    font-family: variables.$text_font1;
+    font-weight: 200;
+    outline-style: solid;
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+    cursor: pointer;
+}

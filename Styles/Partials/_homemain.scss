@@ -1,13 +1,7 @@
 @use "./variables";
 
 .home {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    box-sizing: border-box;
-    margin: auto;
-    align-items: center;
-    color: variables.$white;
-
+    display: none;
 }
 
 
@@ -15,7 +9,7 @@
 #introduction {
     width: 60%;
     color: variables.$white;
-    margin-left: 5rem;
+    margin-left: 8rem;
     h1 {
         font-size: 100px;
         color: variables.$color-blue;

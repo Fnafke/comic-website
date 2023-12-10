@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 body {
-  background-color: #000000;
+  background-image: url("/comic-website/Images/background-image.png");
+  background-size: cover;
 }
 
 header .HeaderDiv img {
@@ -17,18 +18,13 @@ header #countdown_timer {
 }
 
 .home {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  box-sizing: border-box;
-  margin: auto;
-  align-items: center;
-  color: #ffffff;
+  display: none;
 }
 
 #introduction {
   width: 60%;
   color: #ffffff;
-  margin-left: 5rem;
+  margin-left: 8rem;
 }
 #introduction h1 {
   font-size: 100px;
@@ -86,10 +82,10 @@ header #countdown_timer {
 }
 
 .hamburger {
-  position: relative;
+  position: fixed;
   display: block;
   box-sizing: border-box;
-  width: 35px;
+  width: 80px;
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -98,14 +94,12 @@ header #countdown_timer {
   outline: none;
   border: none;
   z-index: 99;
-}
-
-.hamburger {
-  position: fixed;
-  display: block;
-  box-sizing: border-box;
   background-color: #000000;
   padding-bottom: 100%;
+  padding-top: 2rem;
+  outline-color: #ffffff;
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -151,4 +145,38 @@ header #countdown_timer {
   }
 
 }
-*//*# sourceMappingURL=styles.css.map */
+*/
+footer {
+  color: #2b2b2b;
+  text-align: center;
+  padding: 10rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+.no_story_chapters {
+  color: #ffffff;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 200;
+  outline-style: solid;
+  display: block;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.no_draft_chapters {
+  color: #ffffff;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 200;
+  outline-style: solid;
+  display: block;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

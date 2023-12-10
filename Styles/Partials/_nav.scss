@@ -45,24 +45,22 @@
 }
 
 .hamburger {
-  position: relative;
+  position: fixed;
   display: block;
   box-sizing: border-box;
-  width: 35px;
+  width: 80px;
   cursor: pointer;
   appearance: none;
   background: none;
   outline: none;
   border: none;
   z-index: 99;
-}
-
-.hamburger {
-  position: fixed;
-  display: block;
-  box-sizing: border-box;
   background-color: variables.$black;
   padding-bottom: 100%;
+  padding-top: 2rem;
+  outline-color: variables.$white;
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
