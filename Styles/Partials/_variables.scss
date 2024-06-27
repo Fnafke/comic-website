@@ -5,14 +5,15 @@ $darker-sky-blue: #C1E2F6;
 $darker-darker-sky-blue: #ACD7EC;
 $color-blue: #1335a9;
 $grey: #2b2b2b;
+$lightgrey: lightgrey;
 
 
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 $text_font1: 'Noto Serif JP', serif;
 $text_font2: 'Abril Fatface', serif;
-
+$text_font3: 'Ubuntu', serif;

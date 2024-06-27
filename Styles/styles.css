@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 body {
-  background-image: url("/comic-website/Images/background-image.png");
+  background-image: url("./../Images/background-image.png");
   background-size: cover;
+  overflow: scroll;
 }
 
 header .HeaderDiv img {
@@ -179,4 +181,83 @@ footer {
   padding: 1rem;
   font-style: italic;
   cursor: pointer;
+}
+
+.char-showcase-window {
+  display: none;
+  margin: auto;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.char-showcase-window p {
+  color: #ffffff;
+}
+
+.close_window {
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  padding: 1rem;
+  width: -moz-min-content;
+  width: min-content;
+  cursor: pointer;
+  z-index: 99;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-family: "Ubuntu", serif;
+  font-size: 40px;
+  border: 100%;
+  border-color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.window_background_close {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  width: 13%;
+  height: 100%;
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 98;
+}
+
+.characters {
+  color: #ffffff;
+  margin-left: 8rem;
+  list-style-type: none;
+  z-index: 4;
+  font-family: "Noto Serif JP", serif;
+}
+.characters ul, .characters li {
+  list-style-type: none;
+}
+.characters img {
+  width: 178px;
+  height: 224px;
+}
+.characters .stand_users ul, .characters .sword_users ul, .characters .sorcerers ul, .characters .humans ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: 178px;
+  height: 224px;
+}
+.characters .stand_users li:hover img, .characters .sword_users li:hover img, .characters .sorcerers li:hover img, .characters .humans li:hover img {
+  cursor: pointer;
+  outline-style: solid;
+  outline-color: #1335a9;
 }/*# sourceMappingURL=styles.css.map */

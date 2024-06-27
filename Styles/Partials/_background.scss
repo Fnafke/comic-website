@@ -2,6 +2,7 @@
 
 
 body {
-    background-image: url("/comic-website/Images/background-image.png");
+    background-image: url("./../Images/background-image.png");
     background-size: cover;
+    overflow: scroll;
 }
