@@ -61,7 +61,8 @@ header #countdown_timer {
   list-style-type: none;
   justify-content: center;
   flex-wrap: wrap;
-  width: 50%;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 .topnav ul a {
   color: #1335a9;
